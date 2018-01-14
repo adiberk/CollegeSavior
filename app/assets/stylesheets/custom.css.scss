@@ -31,7 +31,7 @@ body{
 //   display: none;
 // }
 // .hide:hover{
-//   display:block !important;
+//   display:block!important;
 // }
 .carousel-caption{
 	top:183px!important;
@@ -65,6 +65,11 @@ body{
   opacity: 0;
   transition: .5s ease;
   background-color: black;
+}
+@media only screen and (max-width: 786px){
+  .overlay{
+    opacity: .8;
+  }
 }
 
 .overlay:hover {
