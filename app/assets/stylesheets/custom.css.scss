@@ -31,12 +31,12 @@ body{
   z-index:-1;
   width:100%;
 }
-// .hide{
-//   display: none;
-// }
-// .hide:hover{
-//   display:block!important;
-// }
+.hide{
+  display: none;
+}
+.hide:hover{
+  display:block!important;
+}
 .carousel-caption{
 	top:183px!important;
 	font-family: 'Sanchez', Rockwell, Georgia, serif;
@@ -73,6 +73,9 @@ body{
 @media only screen and (max-width: 786px){
   .overlay{
     opacity: .8;
+  }
+  .hide{
+    display:block !important;
   }
 }
 .overlay:hover {
