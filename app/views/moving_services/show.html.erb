@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @moving_service.name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @moving_service.last_name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @moving_service.age %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @moving_service.email %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @moving_service.number %>
+</p>
+
+<p>
+  <strong>Items:</strong>
+  <%= @moving_service.items %>
+</p>
+
+<%= link_to 'Edit', edit_moving_service_path(@moving_service) %> |
+<%= link_to 'Back', moving_services_path %>

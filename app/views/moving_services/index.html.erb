@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Moving Services</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Last name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Number</th>
+      <th>Items</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @moving_services.each do |moving_service| %>
+      <tr>
+        <td><%= moving_service.name %></td>
+        <td><%= moving_service.last_name %></td>
+        <td><%= moving_service.age %></td>
+        <td><%= moving_service.email %></td>
+        <td><%= moving_service.number %></td>
+        <td><%= moving_service.items %></td>
+        <td><%= link_to 'Show', moving_service %></td>
+        <td><%= link_to 'Edit', edit_moving_service_path(moving_service) %></td>
+        <td><%= link_to 'Destroy', moving_service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Moving Service', new_moving_service_path %>

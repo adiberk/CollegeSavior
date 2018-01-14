@@ -1,0 +1,27 @@
+<div class="navbar navbar-default navbar-fixed-top mynavbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <%= link_to root_path, class:"navbar-left" do%>
+          <img style="max-width:80px; margin-top: -5px; float:left;" src="logo.png">
+        <% end %>
+        <%=link_to "CollegeSavior", root_path, class: "navbar-brand"%>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div> <!-- end div class="navbar-header" -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <!-- <li><a class="navbar-brand " href="#">CollegeSavior</a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%=link_to "Home", root_path%></li>
+        <li><%= link_to "Moving", moving_services_path%></li>
+        <li><a href="#">Cleaning</a></li>
+        <li><a href="#">Tutoring</a></li>
+      </ul>
+    </div> <!-- end div class="collapse navbar-collapse" -->
+  </div> <!-- end div class="container" -->
+</div> <!-- end div class="navbar navbar-default navbar-fixed-top" -->
